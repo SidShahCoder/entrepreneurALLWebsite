@@ -19,9 +19,9 @@
   /**
    * colors
    */
-
+  --dark-blue: hsl(229, 100%, 66%);
   --battleship-gray: hsl(0, 0%, 53%);
-  --viridian-green: hsl(180, 98%, 31%);
+  --: hsl(180, 98%, 31%);
   --silver-chalice: hsl(0, 0%, 69%);
   --mikado-yellow: hsl(47, 98%, 50%);
   --granite-gray: hsl(0, 0%, 40%);
@@ -155,7 +155,7 @@ body {
 
 .btn {
   background: var(--background, var(--white-1));
-  color: var(--color, var(--viridian-green));
+  color: var(--color, var(--dark-blue));
   font-weight: var(--fw-700);
   width: max-content;
   padding: 10px 25px;
@@ -169,14 +169,14 @@ body {
 }
 
 .btn-primary {
-  --background: var(--viridian-green);
+  --background: var(--dark-blue);
   --color: var(--white-1);
-  --border-color: var(--viridian-green);
+  --border-color: var(--dark-blue);
 }
 
 .btn-primary:is(:hover, :focus) {
   --background: transparent;
-  --color: var(--viridian-green);
+  --color: var(--dark-blue);
 }
 
 .btn-outline {
@@ -185,8 +185,8 @@ body {
 }
 
 .btn-outline:is(:hover, :focus) {
-  --color: var(--viridian-green);
-  --border-color: var(--viridian-green);
+  --color: var(--dark-blue);
+  --border-color: var(--dark-blue);
 }
 
 .section { padding-block: var(--section-padding); }
@@ -280,7 +280,7 @@ body {
 
 :is(.popular, .blog) .card-title > a { color: inherit; }
 
-:is(.popular, .blog) .card-title > a:is(:hover, :focus) { color: var(--viridian-green); }
+:is(.popular, .blog) .card-title > a:is(:hover, :focus) { color: var(--dark-blue); }
 
 
 
@@ -291,7 +291,7 @@ body {
 \*-----------------------------------*/
 
 .header {
-  background: var(--viridian-green);
+  background: var(--dark-blue);
   padding-block: 20px;
   height: 88px;
   overflow: hidden;
@@ -396,7 +396,9 @@ body {
   gap: 15px;
 }
 
-
+.circle-image {
+  border-radius: 50%;
+}
 
 
 
@@ -472,7 +474,7 @@ body {
   border-radius: var(--radius-6);
 }
 
-.popular-card .card-price { background: var(--viridian-green); }
+.popular-card .card-price { background: var(--dark-blue); }
 
 .popular-card .card-rating {
   background: var(--mikado-yellow);
@@ -523,7 +525,7 @@ body {
 }
 
 .about-item-icon {
-  background: var(--viridian-green);
+  background: var(--dark-blue);
   color: var(--white-1);
   font-size: 26px;
   padding: 16px;
@@ -565,7 +567,7 @@ body {
 }
 
 .btn-link {
-  color: var(--viridian-green);
+  color: var(--dark-blue);
   font-weight: var(--fw-700);
   display: flex;
   justify-content: flex-end;
@@ -644,7 +646,7 @@ body {
 }
 
 .newsletter-form .btn-primary:is(:hover, :focus) {
-  --background: var(--viridian-green);
+  --background: var(--dark-blue);
   --color: var(--white-1);
 }
 
@@ -680,7 +682,7 @@ body {
   border-radius: 50%;
 }
 
-.social-link:is(:hover, :focus) { background: var(--viridian-green); }
+.social-link:is(:hover, :focus) { background: var(--dark-blue); }
 
 
 
@@ -694,7 +696,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 15px;
-  background: var(--viridian-green);
+  background: var(--dark-blue);
   color: var(--white-1);
   font-size: 20px;
   padding: 10px;
@@ -928,13 +930,13 @@ body {
   }
 
   .shape-2 {
-    top: 20%;
-    right: 50px;
+    top: 15%;
+    right: 130px;
     animation-delay: 0.25s;
   }
 
   .shape-3 {
-    left: 40%;
+    left: 50%;
     bottom: 20%;
     animation-delay: 0.5s;
   }

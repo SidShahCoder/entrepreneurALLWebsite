@@ -24,6 +24,7 @@ Ionicon
 ## Colors
 
 ``` css
+--dark-blue: hsl(233.88, 67.5%, 44.1%)
 --battleship-gray: hsl(0, 0%, 53%);
 --viridian-green: hsl(180, 98%, 31%);
 --silver-chalice: hsl(0, 0%, 69%);
